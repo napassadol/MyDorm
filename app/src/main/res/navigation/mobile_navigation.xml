@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_room">
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_home"-->
+<!--        android:name="com.example.mydorm.ui.home.HomeFragment"-->
+<!--        android:label="@string/menu_home"-->
+<!--    tools:layout="@layout/fragment_home" />-->
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.mydorm.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/login_fragment" />
+
+    <fragment
+        android:id="@+id/nav_bill"
+        android:name="com.example.mydorm.ui.bill.BillFragment"
+        android:label="@string/menu_ฺbill"
+        tools:layout="@layout/bill_fragment" />
+
+    <fragment
+        android:id="@+id/nav_bill_edit"
+        android:name="com.example.mydorm.ui.bill.BillEditFragment"
+        android:label="@string/menu_ฺbill"
+        tools:layout="@layout/bill_edit_fragment" />
+
+    <fragment
+        android:id="@+id/nav_room"
+        android:name="com.example.mydorm.ui.room.RoomFragment"
+        android:label="@string/menu_room"
+        tools:layout="@layout/room_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="com.example.mydorm.ui.user.UserFragment"
+        android:label="@string/menu_user"
+        tools:layout="@layout/user_fragment">
+        <action
+            android:id="@+id/action_nav_user_to_nav_user_edit"
+            app:destination="@id/nav_user_edit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_user_edit"
+        android:name="com.example.mydorm.ui.user.UserEditFragment"
+        android:label="@string/menu_user_edit"
+        tools:layout="@layout/user_edit_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_room_edit"
+        android:name="com.example.mydorm.ui.room.RoomEditFragment"
+        android:label="@string/menu_room_edit"
+        tools:layout="@layout/room_edit_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_facility"
+        android:name="com.example.mydorm.ui.facility.FacilityFragment"
+        android:label="@string/menu_facility"
+        tools:layout="@layout/facility_fragment"/>
+</navigation>

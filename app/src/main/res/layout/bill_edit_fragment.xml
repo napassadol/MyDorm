@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.room.RoomEditFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/billRoomSpinner"
+            android:layout_width="230dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toTopOf="@+id/textView11"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Price"
+            app:layout_constraintStart_toEndOf="@+id/billUnitTextEdit"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Date"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/UnitText" />
+
+        <TextView
+            android:id="@+id/billStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Status"
+            app:layout_constraintEnd_toEndOf="@+id/billStatusText2"
+            app:layout_constraintTop_toBottomOf="@+id/billStatusText2" />
+
+        <TextView
+            android:id="@+id/billStatusText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="User"
+            app:layout_constraintEnd_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="74dp"
+            android:layout_height="22dp"
+            android:text="Bill Info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="69dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="30dp"
+            android:text="Room No."
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="40dp"
+            android:text="No."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.251"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <EditText
+            android:id="@+id/billNoEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="Bill No."
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/textView14"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toTopOf="@+id/textView14"
+            app:layout_constraintVertical_bias="0.478" />
+
+        <EditText
+            android:id="@+id/billPriceEditText"
+            android:layout_width="118dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="Price"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="@+id/textView8"
+            app:layout_constraintVertical_bias="0.423" />
+
+        <Spinner
+            android:id="@+id/BillTypeSpinner"
+            android:layout_width="230dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toTopOf="@+id/textView9"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Type"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <Button
+            android:id="@+id/billSaveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.303"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/billStatusText" />
+
+        <Button
+            android:id="@+id/billDeleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:text="Delete"
+            app:layout_constraintBottom_toBottomOf="@+id/billSaveBtn"
+            app:layout_constraintStart_toEndOf="@+id/billSaveBtn"
+            app:layout_constraintTop_toTopOf="@+id/billSaveBtn"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/billDateEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="Date"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/textView12"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toTopOf="@+id/textView12"
+            app:layout_constraintVertical_bias="0.346" />
+
+        <EditText
+            android:id="@+id/billStatusEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="Status"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/billStatusText"
+            app:layout_constraintStart_toEndOf="@+id/billStatusText"
+            app:layout_constraintTop_toTopOf="@+id/billStatusText" />
+
+        <EditText
+            android:id="@+id/billUserEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/billStatusText2"
+            app:layout_constraintStart_toEndOf="@+id/billStatusText2"
+            app:layout_constraintTop_toTopOf="@+id/billStatusText2" />
+
+        <Button
+            android:id="@+id/billPaidBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Paid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/billSaveBtn" />
+
+        <TextView
+            android:id="@+id/UnitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="30dp"
+            android:text="Unit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <EditText
+            android:id="@+id/billUnitTextEdit"
+            android:layout_width="118dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="Unit"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/UnitText"
+            app:layout_constraintStart_toEndOf="@+id/UnitText"
+            app:layout_constraintTop_toTopOf="@+id/UnitText"
+            app:layout_constraintVertical_bias="0.416" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
